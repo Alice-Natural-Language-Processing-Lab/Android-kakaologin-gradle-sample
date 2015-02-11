@@ -22,7 +22,7 @@ android {
         versionName "1.0"
     }
     buildTypes {
-        rehttps://github.com/yongbeam/Android-kakaologin-gradle-sample/edit/master/README.md#lease {
+        release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
