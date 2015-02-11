@@ -44,7 +44,7 @@ dependencies {
 
 ## Author
 
- * 이용범
+ * 이용범(LeeYongBeam)
  * Mail: [top6616@gmail.com](mailto://top6616@gmail.com)
  * Web: [www.i-rooting.com](http://www.i-rooting.com)
  * Service Web: [www.yongcloud.co.kr](http://www.yongcloud.co.kr)
