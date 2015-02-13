@@ -42,6 +42,44 @@ dependencies {
 }
 ```
 
+or
+```
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+    .
+    .
+    .
+    // kakao
+    compile('com.kakao.sdk:usermgmt:1.0.46') {
+        exclude module: 'support-v4'
+    }
+    compile('com.kakao.sdk:kakaolink:1.0.46') {
+        exclude module: 'support-v4'
+        exclude module: 'jackson-core'
+        exclude module: 'jackson-databind'
+    }
+    compile('com.kakao.sdk:kakaostory:1.0.46') {
+        exclude module: 'support-v4'
+        exclude module: 'jackson-core'
+        exclude module: 'jackson-databind'
+    }
+    compile('com.kakao.sdk:kakaotalk:1.0.46') {
+        exclude module: 'support-v4'
+        exclude module: 'jackson-core'
+        exclude module: 'jackson-databind'
+    }
+```
 ## Author
 
  * 이용범(LeeYongBeam)
