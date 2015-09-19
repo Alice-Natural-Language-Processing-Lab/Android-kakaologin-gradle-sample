@@ -1,3 +1,16 @@
+# @Deprecated
+카카오에서 Gradle을 공식 지원하기 때문에 더이상 이 샘플은 사용할 필요가 없습니다.
+아래처럼 사용하세요
+```
+    compile 'com.kakao.sdk:kakaolink:1.1.2'
+    compile 'com.kakao.sdk:kakaostory:1.1.2'
+    compile 'com.kakao.sdk:kakaotalk:1.1.2'
+    compile 'com.kakao.sdk:usermgmt:1.1.2'
+
+```
+
+
+
 # Android-kakaologin-gradle-sample
 Kakao login Android Studio SDK Sample
 
