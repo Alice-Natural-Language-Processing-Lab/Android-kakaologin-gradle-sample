@@ -96,10 +96,8 @@ or
 ## Author
 
  * 이용범(LeeYongBeam)
- * Mail: [top6616@gmail.com](mailto://top6616@gmail.com)
- * Web: [www.i-rooting.com](http://www.i-rooting.com)
- * Service Web: [www.yongcloud.co.kr](http://www.yongcloud.co.kr)
- * Sub repository: [GO](http://d.yongcloud.co.kr:9000/LibrarySample/KakaoLoginSample)
+ * Mail: [ray@travelking.kr](mailto://ray@travelking.kr)
+ * Web: [www.travelking.kr](http://www.travelking.kr)
 
 ## License
 Apache License
