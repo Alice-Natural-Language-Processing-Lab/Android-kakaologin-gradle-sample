@@ -1,14 +1,21 @@
 # @Deprecated
 카카오에서 Gradle을 공식 지원하기 때문에 더이상 이 샘플은 사용할 필요가 없습니다.
-아래처럼 사용하세요
+아래처럼 사용하시면 됩니다.
+
+app/build.gradle
 ```
-    compile 'com.kakao.sdk:kakaolink:1.1.2'
-    compile 'com.kakao.sdk:kakaostory:1.1.2'
-    compile 'com.kakao.sdk:kakaotalk:1.1.2'
-    compile 'com.kakao.sdk:usermgmt:1.1.2'
+compile group: project.KAKAO_SDK_GROUP, name: 'kakaolink', version: project.KAKAO_SDK_VERSION
+compile group: project.KAKAO_SDK_GROUP, name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
+compile group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO_SDK_VERSION
 
 ```
 
+gradle.properties
+```
+KAKAO_SDK_GROUP=com.kakao.sdk
+KAKAO_SDK_VERSION=1.1.4
+
+```
 
 
 # Android-kakaologin-gradle-sample
@@ -95,9 +102,9 @@ or
 ```
 ## Author
 
- * 이용범(LeeYongBeam)
+ * 이용범(LeeYongBeom)
  * Mail: [ray@travelking.kr](mailto://ray@travelking.kr)
- * Web: [www.travelking.kr](http://www.travelking.kr)
+ * Web: [www.travelking.kr](https://www.travelking.kr)
 
 ## License
 Apache License
