@@ -1,8 +1,9 @@
-# @Deprecated
-카카오에서 Gradle을 공식 지원하기 때문에 더이상 이 샘플은 사용할 필요가 없습니다.
-아래처럼 사용하시면 됩니다.
+# Android-kakaologin-gradle-sample
+카카오톡 로그인 구현을 위한 샘플 프로젝트입니다.
+자세한 설명은 [이곳]()을 참고해주세요
 
-app/build.gradle
+
+# SDK
 ```
 compile group: project.KAKAO_SDK_GROUP, name: 'kakaolink', version: project.KAKAO_SDK_VERSION
 compile group: project.KAKAO_SDK_GROUP, name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
@@ -10,10 +11,10 @@ compile group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO
 
 ```
 
-gradle.properties
+# SDK Version
 ```
 KAKAO_SDK_GROUP=com.kakao.sdk
-KAKAO_SDK_VERSION=1.1.4
+KAKAO_SDK_VERSION=1.1.14
 
 ```
 
@@ -26,80 +27,6 @@ Kakao login Android Studio SDK Sample
 <img src="https://github.com/yongbeam/Android-kakaologin-gradle-sample/blob/master/kakao_login2.png?raw=true" align="center" height="30%" width="30%" style="margin-left:20px;">
 </div>
 
-## Build.gradle
-```
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
-
-    defaultConfig {
-        applicationId "com.test.kakaotest"
-        minSdkVersion 14
-        targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    packagingOptions {
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/ASL2.0'
-    }
-}
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':kakaologinutil')
-}
-```
-
-or
-```
-    packagingOptions {
-        exclude 'META-INF/DEPENDENCIES.txt'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/DEPENDENCIES'
-        exclude 'META-INF/notice.txt'
-        exclude 'META-INF/license.txt'
-        exclude 'META-INF/dependencies.txt'
-        exclude 'META-INF/LGPL2.1'
-        exclude 'META-INF/ASL2.0'
-    }
-    .
-    .
-    .
-    // kakao
-    compile('com.kakao.sdk:usermgmt:1.0.46') {
-        exclude module: 'support-v4'
-    }
-    compile('com.kakao.sdk:kakaolink:1.0.46') {
-        exclude module: 'support-v4'
-        exclude module: 'jackson-core'
-        exclude module: 'jackson-databind'
-    }
-    compile('com.kakao.sdk:kakaostory:1.0.46') {
-        exclude module: 'support-v4'
-        exclude module: 'jackson-core'
-        exclude module: 'jackson-databind'
-    }
-    compile('com.kakao.sdk:kakaotalk:1.0.46') {
-        exclude module: 'support-v4'
-        exclude module: 'jackson-core'
-        exclude module: 'jackson-databind'
-    }
-```
 ## Author
 
  * 이용범(LeeYongBeom)
