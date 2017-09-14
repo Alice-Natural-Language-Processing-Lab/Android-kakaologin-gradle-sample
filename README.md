@@ -27,11 +27,6 @@ Kakao login Android Studio SDK Sample
 <img src="https://github.com/yongbeam/Android-kakaologin-gradle-sample/blob/master/kakao_login2.png?raw=true" align="center" height="30%" width="30%" style="margin-left:20px;">
 </div>
 
-## Author
-
- * 이용범(LeeYongBeom)
- * Mail: [ray@travelking.kr](mailto://ray@travelking.kr)
- * Web: [www.travelking.kr](https://www.travelking.kr)
 
 ## License
     Copyright (c) 2016 LeeYongBeom
