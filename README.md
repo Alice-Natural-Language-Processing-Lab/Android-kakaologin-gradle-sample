@@ -1,3 +1,8 @@
+# DEPRECATED PROJECT
+이 프로젝트는 아주 오래전 카카오 로그인 SDK가 Gradle을 지원하지 않아 생성했던 프로젝트입니다.
+카카오 공식 문서를 참고하세요.
+
+
 # Android-kakaologin-gradle-sample
 카카오톡 로그인 구현을 위한 샘플 프로젝트입니다.
 자세한 설명은 [이곳](http://mytalkhome.tistory.com/861)을 참고해주세요
